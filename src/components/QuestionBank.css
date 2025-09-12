@@ -1,0 +1,259 @@
+.question-bank {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.toggle-map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  color: white;
+  min-width: 160px;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa); /* default blue gradient */
+}
+
+.action-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+.action-btn.disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Optional: override specific buttons if you want variety later */
+.action-btn.submit,
+.action-btn.next,
+.action-btn.skip,
+.action-btn.explain,
+.action-btn.map {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.action-btn.submit:hover,
+.action-btn.next:hover,
+.action-btn.skip:hover,
+.action-btn.explain:hover,
+.action-btn.map:hover {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+
+/* Specific gradients already defined earlier for .submit, .next, .skip, .explain, .map */
+
+.toggle-map-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+.toggle-map-btn.open {
+  background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.toggle-map-btn .icon {
+  font-size: 1.2rem;
+}
+
+.domain {
+  background: #eef6ff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  color: var(--blue-dark);
+}
+.navigator {
+  margin-top: 2rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+  gap: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  background: #f9fafb;
+}
+
+.nav-btn {
+  border: none;
+  padding: 6px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+}
+
+.nav-btn.active {
+  outline: 2px solid #111827;
+  outline-offset: 1px;
+}
+
+.difficulty {
+  background: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  color: var(--text-muted);
+}
+
+/* Keep long questions readable */
+.question-text {
+  margin: 1rem 0 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  overflow-x: auto;      /* allow horizontal scroll if needed */
+  white-space: normal;   /* let text wrap */
+  word-break: break-word;
+}
+
+/* Choices */
+.choices {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 1rem;
+}
+
+.choice-btn {
+  text-align: left;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: var(--text-dark);
+  transition: background var(--transition), border-color var(--transition);
+}
+
+/* Hover only when not locked by correct feedback */
+.choice-btn:hover {
+  background: #f9fafb;
+}
+
+/* Selected but not yet submitted */
+.choice-btn.selected {
+  background: #e5e7eb;       /* darker gray highlight */
+  border-color: #6b7280;
+}
+
+/* After guessing */
+.choice-btn.correct {
+  background: #d1fae5;
+  border-color: #10b981;
+}
+
+.choice-btn.incorrect {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+/* Actions row */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.submit-btn,
+.next-btn,
+.skip-btn,
+.explanation-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.submit-btn {
+  background: var(--blue-mid);
+  color: #fff;
+}
+.submit-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.next-btn {
+  background: var(--blue-dark);
+  color: #fff;
+}
+
+.skip-btn {
+  background: #d1d5db;
+  color: #111827;
+}
+
+.explanation-btn {
+  background: var(--blue-light);
+  color: #fff;
+}
+
+.explanation-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #eef6ff;
+  border-left: 4px solid var(--blue-mid);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+}

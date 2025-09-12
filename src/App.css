@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111827; /* dark gray-blue */
+  color: white;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-wrapper {
+  position: relative;
+}
+
+.login-card {
+  position: relative;
+  width: 350px;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #1f2937; /* dark slate */
+  z-index: 1;
+  text-align: center;
+}
+
+/* Rotating border */
+.login-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #ff0080, #00bfff, #00ff80, #ff0080);
+  background-size: 300% 300%;
+  z-index: 0;
+  animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+span {
+  color: #f472b6;
+  cursor: pointer;
+}
+
+span:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+.desmos-modal {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 700px;
+  height: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.desmos-header {
+  background: #3b82f6;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+}
+
+.desmos-body {
+  height: calc(100% - 48px);
+}
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
