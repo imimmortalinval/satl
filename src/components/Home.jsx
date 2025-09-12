@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Home.css";
 
 export default function Home() {
-  const [userCount, setUserCount] = useState(2);
+  const [userCount, setUserCount] = useState(7);
 
   return (
     <div className="hero">
@@ -34,4 +34,5 @@ export default function Home() {
     </div>
   );
 }
+
 
