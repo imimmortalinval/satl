@@ -25,9 +25,6 @@ export default function Home() {
   <p>
     Have a math question you'd like for me to solve using desmos? Or just an issue with the website? Message me!
   </p>
-  <a href="mailto:your-email@example.com" className="contact-btn">
-    Contact Me
-  </a>
 </div>
 
       <div className="cta-buttons">
@@ -37,3 +34,4 @@ export default function Home() {
     </div>
   );
 }
+
