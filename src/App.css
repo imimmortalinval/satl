@@ -15,6 +15,13 @@ body {
 .login-wrapper {
   position: relative;
 }
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+}
+
 
 .login-card {
   position: relative;
