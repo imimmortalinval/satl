@@ -44,84 +44,6 @@ const tutoringSlots = [
     image: "https://i.gyazo.com/583b8fa55666153e8d97c3e47647e2e3.png",
     desmosUrl: "https://www.desmos.com/calculator/0cmwfs7biw",
   },
-  {
-    id: 8,
-    title: "Problem #8",
-    image: "https://via.placeholder.com/300x180?text=Problem+8",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 9,
-    title: "Problem #9",
-    image: "https://via.placeholder.com/300x180?text=Problem+9",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 10,
-    title: "Problem #10",
-    image: "https://via.placeholder.com/300x180?text=Problem+10",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 11,
-    title: "Problem #11",
-    image: "https://via.placeholder.com/300x180?text=Problem+11",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 12,
-    title: "Problem #12",
-    image: "https://via.placeholder.com/300x180?text=Problem+12",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 13,
-    title: "Problem #13",
-    image: "https://via.placeholder.com/300x180?text=Problem+13",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 14,
-    title: "Problem #14",
-    image: "https://via.placeholder.com/300x180?text=Problem+14",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 15,
-    title: "Problem #15",
-    image: "https://via.placeholder.com/300x180?text=Problem+15",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 16,
-    title: "Problem #16",
-    image: "https://via.placeholder.com/300x180?text=Problem+16",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 17,
-    title: "Problem #17",
-    image: "https://via.placeholder.com/300x180?text=Problem+17",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 18,
-    title: "Problem #18",
-    image: "https://via.placeholder.com/300x180?text=Problem+18",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
-  },
-  {
-    id: 19,
-    title: "Problem #19",
-    image: "",
-    desmosUrl: "",
-  },
-  {
-    id: 20,
-    title: "Problem #20",
-    image: "",
-    desmosUrl: "",
-  },
 ];
 
 export default function DesmosTutoring() {
@@ -146,4 +68,5 @@ export default function DesmosTutoring() {
     </div>
   );
 }
+
 
