@@ -41,8 +41,8 @@ const tutoringSlots = [
   {
     id: 7,
     title: "Problem #7",
-    image: "https://via.placeholder.com/300x180?text=Problem+7",
-    desmosUrl: "https://www.desmos.com/calculator/yxtdrv87wa",
+    image: "https://i.gyazo.com/583b8fa55666153e8d97c3e47647e2e3.png",
+    desmosUrl: "https://www.desmos.com/calculator/0cmwfs7biw",
   },
   {
     id: 8,
@@ -146,3 +146,4 @@ export default function DesmosTutoring() {
     </div>
   );
 }
+
