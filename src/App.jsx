@@ -12,6 +12,8 @@ import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Questions from "./pages/Questions";
 import DesmosTutoring from "./components/DesmosTutoring";
+import StudyRoutine from "./components/StudyRoutine";
+
 import "./Global.css";
 
 
@@ -33,7 +35,7 @@ export default function App() {
     <Router>
       {user ? (
         <div className="app-container">
-          <Sidebar />
+          <Sidebar />	
           <div className="main-content">
             <Topbar />
             <Routes>
@@ -42,6 +44,8 @@ export default function App() {
               <Route path="/calculator" element={<Calculator />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/questions" element={<Questions />} />
+              <Route path="/studyroutine" element={<StudyRoutine />} />
+
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </div>
