@@ -17,7 +17,8 @@ export default function Sidebar() {
   const links = [
     { to: "/home", label: "Home", icon: <FaHome /> },
     { to: "/tutoring", label: "Desmos Tutoring", icon: <FaChalkboardTeacher /> },
-    { to: "/questions", label: "Question Bank", icon: <FaQuestionCircle /> }
+    { to: "/questions", label: "Question Bank", icon: <FaQuestionCircle /> },
+    { to: "/studyroutine", label: "Study Routine", icon: <FaChalkboardTeacher /> }
   ];
 
   return (
