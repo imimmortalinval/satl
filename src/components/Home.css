@@ -1,49 +1,160 @@
-.hero {
-  padding: 3rem;
-  text-align: center;
+.home {
+  padding: clamp(2rem, 5vw, 4rem);
   background: linear-gradient(to bottom right, #f9fafb, #e0f2fe);
-  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-main);
+  animation: fadeIn 0.6s ease-in;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .highlight {
-  color: #3b82f6;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.countdown-box {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #fef3c7; /* soft amber background */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  color: #1f2937; /* dark gray text */
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+.countdown-box h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.countdown {
   font-weight: bold;
+  font-size: 1.2rem;
+  color: #b45309; /* amber-700 for emphasis */
 }
 
-.stats {
-  display: flex;
-  justify-content: center;
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
-.stat-box {
-  background: white;
-  border-radius: 12px;
+.feature-card {
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 280px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  text-align: center;
 }
 
-.cta-buttons {
-  margin-top: 2rem;
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-section {
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
 .cta-btn {
-  background: #3b82f6;
+  background: linear-gradient(to right, var(--primary), var(--primary-light));
   color: white;
   padding: 0.8rem 1.4rem;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: 600;
-  transition: background 0.2s ease;
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cta-btn:hover {
-  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-box {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius);
+}
+
+.contact-btn {
+  margin-top: 1rem;
+  background: #5865F2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: #4752c4;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.contact-action {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.discord-handle {
+  font-weight: 600;
+  color: var(--primary);
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
 }
