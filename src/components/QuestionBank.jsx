@@ -21,7 +21,7 @@ export default function QuestionBank() {
   const [difficultyFilter, setDifficultyFilter] = useState(["Easy", "Medium", "Hard"]);
   const [startTime, setStartTime] = useState(Date.now());
   const [sessionStats, setSessionStats] = useState({ correct: 0, total: 0 });
-  const [showStats, setShowStats] = useState(true);
+  const [showStats, setShowStats] = useState(false);
 
 
   const topicColors = {
@@ -361,3 +361,4 @@ return (
     </>
   );
 }
+
